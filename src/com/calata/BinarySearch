@@ -1,0 +1,24 @@
+class BusquedaBinaria{
+ /**
+ * Busca un valor numerico dentro de un array
+ * 
+ * @param array con los elementos, primer valor, ultimo valor, dato a buscar
+ * @return posicion del elemento buscado, en caso de no existir devuelve -1
+    */
+ public static int busquedaBinaria(int  int [] list, int first, int last, int value){
+  int n = list.length;
+  int centro;
+  inf= list [0];
+  sup=list[list.length-1];
+   while(inf<=sup){
+     centro=(sup+inf)/2;
+     if(list [centro]==value) return centro;
+     else if(dato < list [centro] ){
+        sup=centro-1;
+     }
+     else {
+       inf=centro+1;
+     }
+   }
+   return -1;
+ }
